@@ -60,6 +60,33 @@ terceros (referencias personales y profesionales). Por eso:
 Si algún día quieres ofrecer el CV para descarga, publica antes una versión depurada
 sin DPI, sin dirección y sin los teléfonos de las referencias.
 
+## Versionado de assets (importante al desplegar)
+
+Las hojas de estilo, los scripts y las imágenes se enlazan con un parámetro
+`?v=AAAAMMDD`. Sin él, el navegador y las cachés intermedias del hosting pueden
+servir un `main.css` o un `i18n.js` antiguos junto al `index.html` nuevo: la
+página se ve rota o con textos desactualizados a partir de la segunda visita.
+
+**Cada vez que cambies un archivo de `assets/`, sube la fecha del parámetro** en
+`index.html` (y en `site.webmanifest` si tocas el favicon). Están todas juntas,
+así que basta con un reemplazo:
+
+```sh
+sed -i 's/?v=[0-9]\{8\}/?v='"$(date +%Y%m%d)"'/g' index.html site.webmanifest
+```
+
+## Logos de las tecnologías
+
+Las píldoras de tecnología llevan su logo. Los símbolos viven en un sprite SVG
+en línea al final de `index.html`, y cada píldora lo referencia con
+`<use href="#ti-...">`. Las marcas provienen de [Simple Icons](https://simpleicons.org)
+(SVG bajo CC0; las marcas pertenecen a sus dueños) y las tecnologías sin logo
+propio —Oracle, AWS, SQL Server, Payara, Hapi, Amazon Connect— usan iconos
+genéricos dibujados a mano en ese mismo sprite.
+
+Para añadir una tecnología nueva: mete su `<symbol id="ti-loquesea">` en el
+sprite y referencia ese id desde la píldora.
+
 ## Desarrollo
 
 No hace falta instalar nada. Para previsualizar en local:
