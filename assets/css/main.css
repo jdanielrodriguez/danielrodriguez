@@ -254,18 +254,14 @@ strong {
 }
 
 .brand-mark {
-	display: grid;
-	place-items: center;
+	display: block;
 	width: 38px;
 	height: 38px;
 	border-radius: 11px;
-	background: linear-gradient(135deg, var(--accent), var(--accent-2));
-	color: #04121a;
-	font-family: var(--mono);
-	font-size: .82rem;
-	font-weight: 700;
-	letter-spacing: -.02em;
+	object-fit: cover;
+	border: 1px solid var(--border-strong);
 	box-shadow: 0 6px 18px -6px var(--accent-line);
+	background: var(--surface-2);
 }
 
 .brand-text {
@@ -453,6 +449,18 @@ strong {
 	grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
 	gap: 56px;
 	align-items: center;
+}
+
+.portrait {
+	display: block;
+	width: 104px;
+	height: 104px;
+	margin-bottom: 26px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid var(--border-strong);
+	box-shadow: 0 0 0 6px var(--accent-soft), var(--shadow-sm);
+	background: var(--surface-2);
 }
 
 .chip {
@@ -1481,6 +1489,12 @@ strong {
 	.hero-cta .btn {
 		flex: 1 1 auto;
 		justify-content: center;
+	}
+
+	.portrait {
+		width: 84px;
+		height: 84px;
+		margin-bottom: 20px;
 	}
 }
 
