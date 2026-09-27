@@ -456,16 +456,32 @@ strong {
 	align-items: center;
 }
 
+.hero-id {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.hero-id-text {
+	min-width: 0;
+}
+
 .portrait {
 	display: block;
-	width: 104px;
-	height: 104px;
-	margin-bottom: 26px;
+	flex: none;
+	width: 124px;
+	height: 124px;
 	border-radius: 50%;
 	object-fit: cover;
 	border: 2px solid var(--border-strong);
 	box-shadow: 0 0 0 6px var(--accent-soft), var(--shadow-sm);
 	background: var(--surface-2);
+}
+
+.hero-greeting {
+	margin-top: 12px;
+	color: var(--text-muted);
+	font-size: 1.02rem;
 }
 
 .chip {
@@ -501,19 +517,10 @@ strong {
 }
 
 .hero h1 {
-	margin: 20px 0 0;
-	font-size: clamp(2.3rem, 5.6vw, 3.9rem);
+	margin: 2px 0 0;
+	font-size: clamp(1.95rem, 4.4vw, 3.2rem);
 	font-weight: 800;
 	letter-spacing: -.035em;
-}
-
-.hero h1>span:first-child {
-	display: block;
-	font-size: .42em;
-	font-weight: 500;
-	letter-spacing: 0;
-	color: var(--text-muted);
-	margin-bottom: 6px;
 }
 
 .grad {
@@ -1500,10 +1507,13 @@ strong {
 		justify-content: center;
 	}
 
+	.hero-id {
+		gap: 16px;
+	}
+
 	.portrait {
-		width: 84px;
-		height: 84px;
-		margin-bottom: 20px;
+		width: 88px;
+		height: 88px;
 	}
 
 	.code-body {
