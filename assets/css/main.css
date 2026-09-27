@@ -102,6 +102,16 @@ h4 {
 	line-height: 1.18;
 	letter-spacing: -.022em;
 	font-weight: 700;
+	text-wrap: balance;
+}
+
+.lead,
+.section-sub,
+.feature-desc,
+.tl-desc,
+.pcard-body>p,
+.copyright {
+	text-wrap: pretty;
 }
 
 p {
@@ -1551,6 +1561,15 @@ strong {
 		content: "/ ";
 		color: var(--accent);
 	}
+
+	/* La dirección pesaba lo mismo que el nombre de la empresa y ocupaba 3 líneas. */
+	.tl-place {
+		display: block;
+		margin-top: 3px;
+		font-size: .8rem;
+		line-height: 1.45;
+		color: var(--text-dim);
+	}
 }
 
 @media (max-width: 480px) {
@@ -1562,20 +1581,31 @@ strong {
 		padding-top: calc(var(--header-h) + 52px);
 	}
 
-	.stats {
-		grid-template-columns: 1fr;
-		gap: 22px;
-	}
-
 	/* El menú desplegable iba 4px por dentro del resto del contenido. */
 	.nav {
 		left: 16px;
 		right: 16px;
 	}
 
+	/* En una columna la mitad derecha quedaba vacía en las cuatro métricas. */
+	.stats {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 26px 18px;
+	}
+
+	.stats li {
+		gap: 6px;
+	}
+
+	.stat-num {
+		display: block;
+		line-height: 1.1;
+	}
+
 	/* El marcador quedaba 1,5px descentrado sobre el carril. */
 	.timeline {
 		padding-left: 20px;
+		gap: 18px;
 	}
 
 	.timeline::before {
@@ -1590,6 +1620,10 @@ strong {
 
 	.tl-card {
 		padding: 20px 16px;
+	}
+
+	.edu-list li {
+		padding-left: 14px;
 	}
 
 	/* Anchos desiguales en una fila; apilados ocupan todo el ancho por igual. */
@@ -1642,6 +1676,12 @@ strong {
 	.ccard-value {
 		font-size: .88rem;
 		letter-spacing: -.012em;
+	}
+}
+
+@media (max-width: 340px) {
+	.stats {
+		grid-template-columns: 1fr;
 	}
 }
 
