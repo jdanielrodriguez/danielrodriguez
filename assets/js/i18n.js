@@ -27,7 +27,7 @@
 			'nav.education': 'Formación',
 			'nav.contact': 'Contacto',
 
-			'hero.badge': 'Guatemala',
+			'hero.badge': 'Mazatenango, Suchitepéquez, Guatemala',
 			'hero.greeting': 'Hola, soy',
 			'hero.role': 'Ingeniero en Sistemas',
 			'hero.role2': 'Integration & Full Stack Engineer',
@@ -63,6 +63,7 @@
 
 			'exp.job1.period': 'Jul 2025 — Actualidad',
 			'exp.job1.role': 'Senior Integration Application Developer',
+			'exp.job1.place': 'Edificio Pradera West, 20 Calle 25-05, Zona 10, Ciudad de Guatemala',
 			'exp.job1.desc': 'Responsable de la integración entre sistemas a través de middleware, conectando plataformas corporativas y servicios de terceros para que la información fluya de forma fiable entre ellos.',
 
 			'exp.job2.period': 'Abr 2022 — Ago 2025',
@@ -168,7 +169,7 @@
 			'nav.education': 'Education',
 			'nav.contact': 'Contact',
 
-			'hero.badge': 'Guatemala',
+			'hero.badge': 'Mazatenango, Suchitepéquez, Guatemala',
 			'hero.greeting': "Hi, I'm",
 			'hero.role': 'Information Systems Engineer',
 			'hero.role2': 'Integration & Full Stack Engineer',
@@ -204,6 +205,7 @@
 
 			'exp.job1.period': 'Jul 2025 — Present',
 			'exp.job1.role': 'Senior Integration Application Developer',
+			'exp.job1.place': 'Pradera West Building, 20 Calle 25-05, Zona 10, Guatemala City',
 			'exp.job1.desc': 'Responsible for system integration through middleware, connecting corporate platforms and third-party services so information flows reliably between them.',
 
 			'exp.job2.period': 'Apr 2022 — Aug 2025',
