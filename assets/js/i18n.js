@@ -27,11 +27,11 @@
 			'nav.education': 'Formación',
 			'nav.contact': 'Contacto',
 
-			'hero.badge': 'Madrid, España · Guatemala',
+			'hero.badge': 'Guatemala',
 			'hero.greeting': 'Hola, soy',
 			'hero.role': 'Ingeniero en Sistemas',
 			'hero.role2': 'Integration & Full Stack Engineer',
-			'hero.lead': 'Llevo más de una década construyendo software que conecta sistemas entre sí: middleware e integraciones empresariales, APIs, ERPs y plataformas web de principio a fin. Hoy diseño integraciones en <strong>Telus Digital</strong> desde Madrid.',
+			'hero.lead': 'Llevo más de una década construyendo software que conecta sistemas entre sí: middleware e integraciones empresariales, APIs, ERPs y plataformas web de principio a fin. Hoy diseño integraciones en <strong>Telus Digital</strong> desde Guatemala.',
 			'hero.ctaProjects': 'Ver proyectos',
 			'hero.ctaContact': 'Hablemos',
 
@@ -51,7 +51,7 @@
 
 			'exp.eyebrow': 'Trayectoria',
 			'exp.title': 'Experiencia profesional',
-			'exp.sub': 'De desarrollador web en Guatemala a ingeniero de integraciones en Madrid.',
+			'exp.sub': 'Más de diez años construyendo software desde Guatemala, para equipos en España y Estados Unidos.',
 			'exp.current': 'Actual',
 
 			'exp.job1.period': 'Jul 2025 — Actualidad',
@@ -161,11 +161,11 @@
 			'nav.education': 'Education',
 			'nav.contact': 'Contact',
 
-			'hero.badge': 'Madrid, Spain · Guatemala',
+			'hero.badge': 'Guatemala',
 			'hero.greeting': "Hi, I'm",
 			'hero.role': 'Information Systems Engineer',
 			'hero.role2': 'Integration & Full Stack Engineer',
-			'hero.lead': 'For over a decade I have been building software that connects systems together: enterprise middleware and integrations, APIs, ERPs and end-to-end web platforms. Today I design integrations at <strong>Telus Digital</strong> from Madrid.',
+			'hero.lead': 'For over a decade I have been building software that connects systems together: enterprise middleware and integrations, APIs, ERPs and end-to-end web platforms. Today I design integrations at <strong>Telus Digital</strong> from Guatemala.',
 			'hero.ctaProjects': 'View projects',
 			'hero.ctaContact': "Let's talk",
 
@@ -185,7 +185,7 @@
 
 			'exp.eyebrow': 'Career',
 			'exp.title': 'Professional experience',
-			'exp.sub': 'From web developer in Guatemala to integration engineer in Madrid.',
+			'exp.sub': 'Over ten years building software from Guatemala, for teams in Spain and the United States.',
 			'exp.current': 'Current',
 
 			'exp.job1.period': 'Jul 2025 — Present',
