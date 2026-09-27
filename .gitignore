@@ -1,0 +1,13 @@
+# Documentos personales: contienen DPI, dirección y datos de terceros.
+docs/
+
+# Basura de macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# Editores
+.vscode/
+.idea/
+*.swp
