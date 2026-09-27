@@ -72,8 +72,11 @@ página se ve rota o con textos desactualizados a partir de la segunda visita.
 así que basta con un reemplazo:
 
 ```sh
-sed -i 's/?v=[0-9]\{8\}/?v='"$(date +%Y%m%d)"'/g' index.html site.webmanifest
+sed -i -E "s/\?v=[0-9]{8}(\.[0-9]+)?/?v=$(date +%Y%m%d)/g" index.html site.webmanifest
 ```
+
+Si publicas dos veces el mismo día, añade un sufijo a mano (`?v=20260927.2`,
+`.3`…); el comando de arriba lo reemplaza por la fecha limpia al día siguiente.
 
 ## Logos de las tecnologías
 
