@@ -426,6 +426,7 @@ strong {
 }
 
 .btn-primary {
+	border: 1px solid transparent;
 	background: var(--accent-grad);
 	color: var(--on-accent);
 	box-shadow: 0 12px 30px -12px var(--accent-line);
@@ -1444,6 +1445,15 @@ strong {
 
 @media (max-width: 860px) {
 
+	/* El botón flotante de «volver arriba» se superponía al texto del pie. */
+	.site-footer {
+		padding: 34px 0 calc(34px + 44px + 22px);
+	}
+
+	.footer-inner {
+		align-items: flex-start;
+	}
+
 	/* Objetivo táctil mínimo de 44px y misma altura en los tres controles. */
 	.icon-btn {
 		width: 44px;
@@ -1523,6 +1533,26 @@ strong {
 	}
 }
 
+@media (max-width: 600px) {
+
+	/* El rol llegaba justo al borde derecho; en inglés partía peor todavía. */
+	.hero-role {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2px;
+	}
+
+	.hero-role .sep {
+		display: none;
+	}
+
+	.hero-role span:last-child::before {
+		content: "/ ";
+		color: var(--accent);
+	}
+}
+
 @media (max-width: 480px) {
 	.container {
 		width: calc(100% - 32px);
@@ -1537,22 +1567,38 @@ strong {
 		gap: 22px;
 	}
 
+	/* El menú desplegable iba 4px por dentro del resto del contenido. */
+	.nav {
+		left: 16px;
+		right: 16px;
+	}
+
+	/* El marcador quedaba 1,5px descentrado sobre el carril. */
 	.timeline {
-		padding-left: 26px;
+		padding-left: 20px;
+	}
+
+	.timeline::before {
+		left: 3px;
 	}
 
 	.tl-marker {
-		left: -26px;
+		left: -22.5px;
 		width: 13px;
 		height: 13px;
 	}
 
 	.tl-card {
-		padding: 20px 18px;
+		padding: 20px 16px;
+	}
+
+	/* Anchos desiguales en una fila; apilados ocupan todo el ancho por igual. */
+	.hero-cta {
+		gap: 10px;
 	}
 
 	.hero-cta .btn {
-		flex: 1 1 auto;
+		flex: 1 1 100%;
 		justify-content: center;
 	}
 
@@ -1575,8 +1621,27 @@ strong {
 	}
 
 	.code-body {
-		padding-inline: 16px;
-		font-size: .7rem;
+		padding-inline: 10px;
+		font-size: clamp(.58rem, 2.95vw, .7rem);
+		line-height: 1.75;
+		overscroll-behavior-x: contain;
+	}
+
+	.c-prop {
+		min-width: 8ch;
+	}
+}
+
+@media (max-width: 380px) {
+
+	/* El correo se partía en dos líneas por un punto arbitrario. */
+	.ccard {
+		padding: 22px 18px;
+	}
+
+	.ccard-value {
+		font-size: .88rem;
+		letter-spacing: -.012em;
 	}
 }
 
