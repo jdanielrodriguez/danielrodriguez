@@ -83,6 +83,7 @@ html {
 
 body {
 	margin: 0;
+	-webkit-tap-highlight-color: transparent;
 	background: var(--bg);
 	color: var(--text);
 	font-family: var(--font);
@@ -238,6 +239,7 @@ strong {
 }
 
 .site-header.is-stuck {
+	background: var(--bg);
 	background: color-mix(in srgb, var(--bg) 82%, transparent);
 	backdrop-filter: saturate(160%) blur(14px);
 	-webkit-backdrop-filter: saturate(160%) blur(14px);
@@ -528,6 +530,7 @@ strong {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
+	-webkit-text-fill-color: transparent;
 }
 
 .hero-role {
@@ -708,6 +711,7 @@ strong {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
+	-webkit-text-fill-color: transparent;
 }
 
 .stats span {
@@ -1377,6 +1381,7 @@ strong {
 	height: 44px;
 	border: 1px solid var(--border);
 	border-radius: 13px;
+	background: var(--bg-alt);
 	background: color-mix(in srgb, var(--bg-alt) 88%, transparent);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -1450,6 +1455,7 @@ strong {
 		padding: 10px;
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
+		background: var(--bg-alt);
 		background: color-mix(in srgb, var(--bg-alt) 96%, transparent);
 		backdrop-filter: blur(18px);
 		-webkit-backdrop-filter: blur(18px);
