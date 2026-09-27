@@ -22,7 +22,7 @@
 
 	--text: #e9eefb;
 	--text-muted: #97a5bd;
-	--text-dim: #6b7c96;
+	--text-dim: #8296b2;
 
 	--grid-line: rgba(255, 255, 255, .035);
 	--glow-1: rgba(34, 211, 238, .16);
@@ -59,7 +59,7 @@
 
 	--text: #0d1526;
 	--text-muted: #4a5a73;
-	--text-dim: #6f7f97;
+	--text-dim: #5b6b83;
 
 	--grid-line: rgba(15, 23, 42, .04);
 	--glow-1: rgba(8, 145, 178, .13);
@@ -1443,6 +1443,24 @@ strong {
 }
 
 @media (max-width: 860px) {
+
+	/* Objetivo táctil mínimo de 44px y misma altura en los tres controles. */
+	.icon-btn {
+		width: 44px;
+		height: 44px;
+	}
+
+	.brand-mark {
+		width: 44px;
+		height: 44px;
+		border-radius: 13px;
+	}
+
+	.lang-switch button {
+		min-width: 44px;
+		padding: 10px 8px;
+	}
+
 	.nav-toggle {
 		display: grid;
 	}
@@ -1536,6 +1554,15 @@ strong {
 	.hero-cta .btn {
 		flex: 1 1 auto;
 		justify-content: center;
+	}
+
+	.social a {
+		width: 44px;
+		height: 44px;
+	}
+
+	.pcard-link {
+		padding-block: 10px;
 	}
 
 	.hero-id {
