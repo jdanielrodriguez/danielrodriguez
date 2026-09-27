@@ -1,22 +1,89 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
 
 <head>
-	<title>José Daniel Rodríguez</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>José Daniel Rodríguez — Integration &amp; Full Stack Engineer</title>
+
+	<meta name="description" data-i18n-content="meta.description"
+		content="Ingeniero en Sistemas especializado en integraciones de sistemas y desarrollo full stack. Más de 10 años construyendo plataformas con PHP/Symfony, Node.js, Java y Angular.">
+	<meta name="author" content="José Daniel Rodríguez Rodríguez">
+	<meta name="theme-color" content="#070b14">
+	<link rel="canonical" href="https://josedanielrodriguez.com/">
+	<link rel="alternate" hreflang="es" href="https://josedanielrodriguez.com/">
+	<link rel="alternate" hreflang="en" href="https://josedanielrodriguez.com/?lang=en">
+	<link rel="alternate" hreflang="x-default" href="https://josedanielrodriguez.com/">
+
+	<meta property="og:type" content="profile">
+	<meta property="og:site_name" content="José Daniel Rodríguez">
+	<meta property="og:url" content="https://josedanielrodriguez.com/">
+	<meta property="og:title" content="José Daniel Rodríguez — Integration &amp; Full Stack Engineer">
+	<meta property="og:description" data-i18n-content="meta.description"
+		content="Ingeniero en Sistemas especializado en integraciones de sistemas y desarrollo full stack. Más de 10 años construyendo plataformas con PHP/Symfony, Node.js, Java y Angular.">
+	<meta property="og:image" content="https://josedanielrodriguez.com/assets/img/og.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:locale:alternate" content="en_US">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+	<link rel="manifest" href="site.webmanifest">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<noscript>
+		<!-- Sin JavaScript no hay animación de entrada: el contenido se muestra directamente. -->
+		<style>
+			[data-reveal] {
+				opacity: 1 !important;
+				transform: none !important;
+			}
+		</style>
+	</noscript>
+
+	<script>
+		// Aplica el tema y el idioma antes del primer pintado para evitar parpadeo.
+		(function () {
+			try {
+				// Oscuro por defecto; el tema claro es una elección explícita que se recuerda.
+				var t = localStorage.getItem('theme');
+				document.documentElement.dataset.theme = t === 'light' ? 'light' : 'dark';
+				var p = new URLSearchParams(location.search).get('lang');
+				var l = p || localStorage.getItem('lang') || 'es';
+				if (l !== 'es' && l !== 'en') l = 'es';
+				document.documentElement.lang = l;
+			} catch (e) { }
+		})();
+	</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "José Daniel Rodríguez Rodríguez",
+		"url": "https://josedanielrodriguez.com/",
+		"jobTitle": "Senior Integration Application Developer",
+		"email": "mailto:contacto@josedanielrodriguez.com",
+		"worksFor": { "@type": "Organization", "name": "Telus Digital" },
+		"alumniOf": [
+			{ "@type": "CollegeOrUniversity", "name": "Universidad Mariano Gálvez de Guatemala" },
+			{ "@type": "CollegeOrUniversity", "name": "Universidad de San Carlos de Guatemala" }
+		],
+		"knowsLanguage": ["es", "en"],
+		"knowsAbout": ["Integraciones de sistemas", "Middleware", "PHP", "Symfony", "Node.js", "Java", "Angular", "SQL", "AWS"],
+		"sameAs": [
+			"https://github.com/jdanielrodriguez",
+			"https://www.linkedin.com/in/jdanielrodriguez/"
+		]
+	}
+	</script>
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QE9730XX5P"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -26,181 +93,867 @@
 	</script>
 </head>
 
-<body class="loading">
-	<div id="wrapper">
-		<div id="bg"></div>
-		<div id="overlay"></div>
-		<div id="main">
+<body>
+	<a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
 
-			<!-- Header -->
-			<header id="header">
-				<h1>José Daniel Rodríguez</h1>
-				<p class=" withe">Ingeniero en Sistemas </p>
-				<p class=" black">Desarrollo de aplicaciones Web &nbsp;&bull;&nbsp; Administracion de Servidores en la Nube
-					&nbsp;&bull;&nbsp; Consultorias de Tecnología </p>
-				<nav>
-					<ul>
-						<li><a href="https://wa.link/bwtyzc" target="_blank" class="icon fa-whatsapp black"><span
-									class="label">Whatsapp</span></a></li>
-						<li><a href="https://www.facebook.com/DEANIELL6195" target="_blank" class="icon fa-facebook black"><span
-									class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/deaniell61/" target="_blank" class="icon fa-linkedin black"><span
-									class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/Deaniell61" target="_blank" class="icon fa-github black"><span
-									class="label">Github</span></a></li>
-						<li><a href="mailto:contacto@josedanielrodriguez.com?subject=Hola%20Daniel"
-								class="icon fa-envelope-o black"><span class="label">Email</span></a></li>
+	<div class="bg-fx" aria-hidden="true">
+		<div class="bg-grid"></div>
+		<div class="bg-glow bg-glow--1"></div>
+		<div class="bg-glow bg-glow--2"></div>
+	</div>
+
+	<!-- ============ Cabecera ============ -->
+	<header class="site-header" id="siteHeader">
+		<div class="container header-inner">
+			<a class="brand" href="#inicio">
+				<span class="brand-mark" aria-hidden="true">JD</span>
+				<span class="brand-text">
+					<strong>José Daniel</strong>
+					<span>Rodríguez</span>
+				</span>
+			</a>
+
+			<nav class="nav" id="primaryNav" data-i18n-aria-label="a11y.primaryNav" aria-label="Navegación principal">
+				<ul>
+					<li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+					<li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+					<li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+					<li><a href="#formacion" data-i18n="nav.education">Formación</a></li>
+					<li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-actions">
+				<div class="lang-switch" role="group" data-i18n-aria-label="a11y.language" aria-label="Idioma">
+					<button type="button" data-lang="es" class="is-active" aria-pressed="true">ES</button>
+					<button type="button" data-lang="en" aria-pressed="false">EN</button>
+				</div>
+
+				<button type="button" class="icon-btn" id="themeToggle" data-i18n-aria-label="a11y.theme"
+					aria-label="Cambiar tema">
+					<svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+						<circle cx="12" cy="12" r="4.2" />
+						<path d="M12 2.4v2.6M12 19v2.6M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2.4 12h2.6M19 12h2.6M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9" />
+					</svg>
+					<svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.6 8.6 0 1 0 10.8 10.8Z" />
+					</svg>
+				</button>
+
+				<button type="button" class="icon-btn nav-toggle" id="navToggle" aria-expanded="false"
+					aria-controls="primaryNav" data-i18n-aria-label="a11y.menu" aria-label="Abrir menú">
+					<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+						<path class="bar bar-1" d="M4 7h16" />
+						<path class="bar bar-2" d="M4 12h16" />
+						<path class="bar bar-3" d="M4 17h16" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main id="main">
+
+		<!-- ============ Portada ============ -->
+		<section class="hero" id="inicio">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<p class="chip" data-reveal>
+						<span class="chip-dot" aria-hidden="true"></span>
+						<span data-i18n="hero.badge">Madrid, España · Guatemala</span>
+					</p>
+
+					<h1 data-reveal>
+						<span data-i18n="hero.greeting">Hola, soy</span>
+						<span class="grad">José Daniel Rodríguez</span>
+					</h1>
+
+					<p class="hero-role" data-reveal>
+						<span data-i18n="hero.role">Ingeniero en Sistemas</span>
+						<span class="sep" aria-hidden="true">/</span>
+						<span data-i18n="hero.role2">Integration &amp; Full Stack Engineer</span>
+					</p>
+
+					<p class="lead" data-reveal data-i18n="hero.lead">
+						Llevo más de una década construyendo software que conecta sistemas entre sí: middleware e
+						integraciones empresariales, APIs, ERPs y plataformas web de principio a fin. Hoy diseño
+						integraciones en <strong>Telus Digital</strong> desde Madrid.
+					</p>
+
+					<div class="hero-cta" data-reveal>
+						<a class="btn btn-primary" href="#proyectos">
+							<span data-i18n="hero.ctaProjects">Ver proyectos</span>
+							<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" />
+							</svg>
+						</a>
+						<a class="btn btn-ghost" href="#contacto" data-i18n="hero.ctaContact">Hablemos</a>
+					</div>
+
+					<ul class="social" data-reveal>
+						<li>
+							<a href="https://github.com/jdanielrodriguez" target="_blank" rel="noopener noreferrer"
+								aria-label="GitHub">
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/jdanielrodriguez/" target="_blank" rel="noopener noreferrer"
+								aria-label="LinkedIn">
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.6 4.78 6V21h-4v-5.5c0-1.31-.02-3-1.86-3-1.86 0-2.14 1.42-2.14 2.9V21h-4V9Z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://wa.link/bwtyzc" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+									<path
+										d="M12.04 2.5a9.44 9.44 0 0 0-8.1 14.24L2.5 21.5l4.9-1.37a9.44 9.44 0 1 0 4.64-17.63Zm0 1.78a7.66 7.66 0 1 1-3.9 14.25l-.28-.17-2.9.81.82-2.83-.18-.29A7.66 7.66 0 0 1 12.04 4.28Zm-3.2 3.6c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.95.62.45-.04 1.45-.59 1.65-1.17.2-.57.2-1.06.15-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.45-.71-1.67-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.33-.75-1.82-.19-.46-.39-.4-.54-.41h-.29Z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:contacto@josedanielrodriguez.com?subject=Hola%20Daniel" aria-label="Email">
+								<svg class="icon icon--stroke" viewBox="0 0 24 24" aria-hidden="true">
+									<rect x="2.8" y="4.8" width="18.4" height="14.4" rx="2.4" />
+									<path d="m3.4 6.6 8.6 6 8.6-6" />
+								</svg>
+							</a>
+						</li>
 					</ul>
-				</nav>
-				<div class="owl-carousel">
-					<div class="project">
-						<div>
-							<h3>Punto de venta</h3>
-							<small>Desarrollado en php, js, html y css</small>
+				</div>
+
+				<div class="hero-visual" data-reveal aria-hidden="true">
+					<div class="code-card">
+						<div class="code-bar">
+							<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+							<span class="code-file">perfil.ts</span>
 						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Punto de venta</h3>
-							<small>Frontend Angular2+, Backend Laravel5</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Control de Restaurantes</h3>
-							<small>Frontend Angular2+, Backend Laravel5</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Galeria Dinamica</h3>
-							<small>Frontend html, js, css y Backend Laravel5</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Administrador web</h3>
-							<small>Frontend Angular2+, Backend Laravel5</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Landing de Marca</h3>
-							<small>Desarrollado en html y css</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Demo Pasarela de Pago (Pagadito)</h3>
-							<small>Desarrollado en php, js, html y css</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Pagina Wordpress</h3>
-							<small>Wordpress</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Ordenes Shopify</h3>
-							<small>Desarrollado en php, js, html y css</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>E-Commerce</h3>
-							<small>Frontend Angular2+, Backend Laravel5</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
-					</div>
-					<div class="project">
-						<div>
-							<h3>Administrador de E-Commerce</h3>
-							<small>Frontend Angular2+, Backend Laravel5</small>
-						</div>
-						<div class="card">
-							<img src="https://placehold.it/100x100" style="width:auto!important;height:auto!important;" alt="">
-						</div>
+						<pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">daniel</span> = {
+  <span class="c-prop">rol</span>:     <span class="c-str" data-i18n="code.role">'Integration &amp; Full Stack'</span>,
+  <span class="c-prop">empresa</span>: <span class="c-str">'Telus Digital'</span>,
+  <span class="c-prop">base</span>:    [<span class="c-str">'Madrid, ES'</span>, <span class="c-str">'Guatemala, GT'</span>],
+  <span class="c-prop">stack</span>:   [<span class="c-str">'PHP'</span>, <span class="c-str">'Node'</span>, <span class="c-str">'Java'</span>, <span class="c-str">'Angular'</span>],
+  <span class="c-prop">enfoque</span>: <span class="c-str" data-i18n="code.focus">'middleware, APIs e integraciones'</span>,
+  <span class="c-prop">idiomas</span>: [<span class="c-str">'es'</span>, <span class="c-str">'en'</span>]
+};</code></pre>
 					</div>
 				</div>
-			</header>
+			</div>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<span class="copyright">&copy;<span id="year"></span> Todos los Derechos Reservados <a
-						href="https://www.facebook.com/DEANIELL6195" target="_blank">José Daniel Rodríguez</a>.</span>
-			</footer>
+			<ul class="stats container">
+				<li data-reveal>
+					<strong class="stat-num" data-count="10" data-suffix="+">10+</strong>
+					<span data-i18n="stats.years">años de experiencia profesional</span>
+				</li>
+				<li data-reveal>
+					<strong class="stat-num" data-count="6">6</strong>
+					<span data-i18n="stats.companies">empresas en 3 países</span>
+				</li>
+				<li data-reveal>
+					<strong class="stat-num" data-count="20" data-suffix="+">20+</strong>
+					<span data-i18n="stats.tech">tecnologías en producción</span>
+				</li>
+				<li data-reveal>
+					<strong class="stat-num">ES / EN</strong>
+					<span data-i18n="stats.languages">trabajo en ambos idiomas</span>
+				</li>
+			</ul>
+		</section>
 
+		<!-- ============ Experiencia ============ -->
+		<section class="section" id="experiencia">
+			<div class="container">
+				<header class="section-head" data-reveal>
+					<p class="section-eyebrow" data-i18n="exp.eyebrow">Trayectoria</p>
+					<h2 data-i18n="exp.title">Experiencia profesional</h2>
+					<p class="section-sub" data-i18n="exp.sub">De desarrollador web en Guatemala a ingeniero de
+						integraciones en Madrid.</p>
+				</header>
+
+				<ol class="timeline">
+					<li class="tl-item is-current" data-reveal>
+						<div class="tl-marker" aria-hidden="true"></div>
+						<div class="tl-card">
+							<p class="tl-period"><span data-i18n="exp.job1.period">Jul 2025 — Actualidad</span>
+								<span class="tag tag-live" data-i18n="exp.current">Actual</span>
+							</p>
+							<h3 class="tl-role" data-i18n="exp.job1.role">Senior Integration Application Developer</h3>
+							<p class="tl-company">Telus Digital <span class="tl-place">· Madrid, <span
+										data-i18n="country.es">España</span></span></p>
+							<p class="tl-desc" data-i18n="exp.job1.desc">Responsable de la integración entre sistemas a
+								través de middleware, conectando plataformas corporativas y servicios de terceros para que
+								la información fluya de forma fiable entre ellos.</p>
+							<ul class="chips">
+								<li>Middleware</li>
+								<li>APIs REST</li>
+								<li>Amazon Connect</li>
+								<li>Zendesk</li>
+								<li>Java</li>
+								<li>Node.js</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="tl-item" data-reveal>
+						<div class="tl-marker" aria-hidden="true"></div>
+						<div class="tl-card">
+							<p class="tl-period" data-i18n="exp.job2.period">Abr 2022 — Ago 2025</p>
+							<h3 class="tl-role" data-i18n="exp.job2.role">Full Stack Developer</h3>
+							<p class="tl-company">Vidoomy <span class="tl-place">· Madrid, <span
+										data-i18n="country.es">España</span></span></p>
+							<p class="tl-desc" data-i18n="exp.job2.desc">Desarrollo y mantenimiento de módulos para varios
+								proyectos de la plataforma publicitaria: backend en Symfony y Node.js, servicios en Java y
+								automatización de builds y despliegues con Jenkins.</p>
+							<ul class="chips">
+								<li>Symfony</li>
+								<li>PHP</li>
+								<li>Node.js</li>
+								<li>Java</li>
+								<li>JavaScript</li>
+								<li>Jenkins</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="tl-item" data-reveal>
+						<div class="tl-marker" aria-hidden="true"></div>
+						<div class="tl-card">
+							<p class="tl-period" data-i18n="exp.job3.period">Nov 2019 — Ene 2022</p>
+							<h3 class="tl-role" data-i18n="exp.job3.role">Desarrollador Web</h3>
+							<p class="tl-company">Grupo Tecun S.A. — CADS <span class="tl-place">· <span
+										data-i18n="country.gt">Guatemala</span></span></p>
+							<p class="tl-desc" data-i18n="exp.job3.desc">Creación y mantenimiento de nuevos módulos del ERP
+								interno de la compañía, desarrollados en Java sobre una arquitectura de microservicios con
+								Payara.</p>
+							<ul class="chips">
+								<li>Java SE</li>
+								<li>Java JPA</li>
+								<li>Payara</li>
+								<li data-i18n="chip.microservices">Microservicios</li>
+								<li>SQL</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="tl-item" data-reveal>
+						<div class="tl-marker" aria-hidden="true"></div>
+						<div class="tl-card">
+							<p class="tl-period" data-i18n="exp.job4.period">Jul 2019 — Oct 2019</p>
+							<h3 class="tl-role" data-i18n="exp.job4.role">Full Stack Developer — Encargado del área de
+								desarrollo</h3>
+							<p class="tl-company">CODE Digital Marketing <span class="tl-place">· <span
+										data-i18n="country.gt">Guatemala</span></span></p>
+							<p class="tl-desc" data-i18n="exp.job4.desc">A cargo del área de desarrollo: backend en Laravel
+								y frontend en Angular, WordPress y HTML para los clientes de la agencia.</p>
+							<ul class="chips">
+								<li>Laravel</li>
+								<li>Angular</li>
+								<li>WordPress</li>
+								<li>HTML/CSS</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="tl-item" data-reveal>
+						<div class="tl-marker" aria-hidden="true"></div>
+						<div class="tl-card">
+							<p class="tl-period" data-i18n="exp.job5.period">Jul 2017 — Jul 2019</p>
+							<h3 class="tl-role" data-i18n="exp.job5.role">Software Engineer — Encargado del área de
+								desarrollo</h3>
+							<p class="tl-company">Foxy Labs Guatemala <span class="tl-place">· <span
+										data-i18n="country.gt">Guatemala</span></span></p>
+							<p class="tl-desc" data-i18n="exp.job5.desc">Desarrollo backend, frontend y móvil. Backend en
+								Laravel, interfaces en Angular y aplicaciones híbridas con Ionic.</p>
+							<ul class="chips">
+								<li>Laravel</li>
+								<li>Angular</li>
+								<li>Ionic</li>
+								<li>PHP</li>
+								<li>MySQL</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="tl-item" data-reveal>
+						<div class="tl-marker" aria-hidden="true"></div>
+						<div class="tl-card">
+							<p class="tl-period" data-i18n="exp.job6.period">Feb 2016 — May 2017</p>
+							<h3 class="tl-role" data-i18n="exp.job6.role">Desarrollador Backend y Frontend</h3>
+							<p class="tl-company">SigefCloud <span class="tl-place">· Atlanta, Georgia, <span
+										data-i18n="country.us">EE. UU.</span></span></p>
+							<p class="tl-desc" data-i18n="exp.job6.desc">Desarrollo backend y frontend de la plataforma
+								SigefCloud, mi primera experiencia profesional trabajando para un equipo en el extranjero.
+							</p>
+							<ul class="chips">
+								<li>PHP</li>
+								<li>JavaScript</li>
+								<li>MySQL</li>
+							</ul>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<!-- ============ Proyectos ============ -->
+		<section class="section section-alt" id="proyectos">
+			<div class="container">
+				<header class="section-head" data-reveal>
+					<p class="section-eyebrow" data-i18n="proj.eyebrow">Portafolio</p>
+					<h2 data-i18n="proj.title">Proyectos</h2>
+					<p class="section-sub" data-i18n="proj.sub">Plataformas completas, de la base de datos a la interfaz.
+					</p>
+				</header>
+
+				<!-- Proyecto destacado -->
+				<article class="feature" data-reveal>
+					<div class="feature-media" aria-hidden="true">
+						<svg viewBox="0 0 400 400" class="cover cover-boletiva">
+							<defs>
+								<linearGradient id="gBol" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0%" stop-color="var(--accent)" />
+									<stop offset="100%" stop-color="var(--accent-2)" />
+								</linearGradient>
+							</defs>
+
+							<!-- Escenario -->
+							<path d="M128 30h144" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" opacity=".9" />
+							<path d="M112 44h176" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" opacity=".28" />
+
+							<!-- Mapa de asientos -->
+							<g class="cov-seats" fill="url(#gBol)">
+								<g opacity=".78">
+									<rect x="128" y="76" width="22" height="15" rx="5" /><rect x="158" y="76" width="22" height="15" rx="5" />
+									<rect x="188" y="76" width="22" height="15" rx="5" /><rect x="218" y="76" width="22" height="15" rx="5" />
+									<rect x="248" y="76" width="22" height="15" rx="5" />
+								</g>
+								<g opacity=".52">
+									<rect x="98" y="102" width="22" height="15" rx="5" /><rect x="128" y="102" width="22" height="15" rx="5" />
+									<rect x="158" y="102" width="22" height="15" rx="5" /><rect x="188" y="102" width="22" height="15" rx="5" />
+									<rect x="218" y="102" width="22" height="15" rx="5" /><rect x="248" y="102" width="22" height="15" rx="5" />
+									<rect x="278" y="102" width="22" height="15" rx="5" />
+								</g>
+								<g opacity=".3">
+									<rect x="68" y="128" width="22" height="15" rx="5" /><rect x="98" y="128" width="22" height="15" rx="5" />
+									<rect x="128" y="128" width="22" height="15" rx="5" /><rect x="158" y="128" width="22" height="15" rx="5" />
+									<rect x="188" y="128" width="22" height="15" rx="5" /><rect x="218" y="128" width="22" height="15" rx="5" />
+									<rect x="248" y="128" width="22" height="15" rx="5" /><rect x="278" y="128" width="22" height="15" rx="5" />
+									<rect x="308" y="128" width="22" height="15" rx="5" />
+								</g>
+								<g opacity=".16">
+									<rect x="68" y="154" width="22" height="15" rx="5" /><rect x="98" y="154" width="22" height="15" rx="5" />
+									<rect x="128" y="154" width="22" height="15" rx="5" /><rect x="158" y="154" width="22" height="15" rx="5" />
+									<rect x="188" y="154" width="22" height="15" rx="5" /><rect x="218" y="154" width="22" height="15" rx="5" />
+									<rect x="248" y="154" width="22" height="15" rx="5" /><rect x="278" y="154" width="22" height="15" rx="5" />
+									<rect x="308" y="154" width="22" height="15" rx="5" />
+								</g>
+							</g>
+
+							<!-- Boleto -->
+							<g transform="translate(40 250)">
+								<path d="M12 0h296a12 12 0 0 1 12 12v26a14 14 0 0 0 0 28v26a12 12 0 0 1-12 12H12A12 12 0 0 1 0 92V66a14 14 0 0 0 0-28V12A12 12 0 0 1 12 0Z"
+									fill="url(#gBol)" fill-opacity=".14" stroke="url(#gBol)" stroke-width="2" />
+								<path d="M222 14v76" stroke="var(--accent-2)" stroke-width="2" stroke-dasharray="5 7" opacity=".6" />
+								<g fill="url(#gBol)">
+									<rect x="30" y="26" width="118" height="10" rx="5" opacity=".85" />
+									<rect x="30" y="46" width="86" height="8" rx="4" opacity=".5" />
+									<rect x="30" y="64" width="62" height="8" rx="4" opacity=".3" />
+								</g>
+								<g fill="url(#gBol)" opacity=".7" transform="translate(248 30)">
+									<rect width="14" height="14" rx="3" /><rect x="22" width="14" height="14" rx="3" opacity=".55" />
+									<rect y="22" width="14" height="14" rx="3" opacity=".55" /><rect x="22" y="22" width="14" height="14" rx="3" />
+									<rect x="44" width="14" height="14" rx="3" opacity=".3" /><rect x="44" y="22" width="14" height="14" rx="3" opacity=".7" />
+								</g>
+							</g>
+
+							<g class="cov-spark">
+								<circle cx="70" cy="46" r="3.5" fill="var(--accent)" />
+								<circle cx="330" cy="58" r="2.6" fill="var(--accent-2)" />
+								<circle cx="300" cy="24" r="2" fill="var(--accent)" />
+							</g>
+						</svg>
+					</div>
+
+					<div class="feature-body">
+						<p class="feature-flag">
+							<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+								<path d="m12 3.2 2.7 5.6 6.1.86-4.4 4.3 1.04 6.1L12 17.2l-5.44 2.86 1.04-6.1-4.4-4.3 6.1-.86L12 3.2Z" />
+							</svg>
+							<span data-i18n="proj.featured">Proyecto destacado</span>
+						</p>
+						<h3 class="feature-title">Boletiva</h3>
+						<p class="feature-tagline" data-i18n="proj.boletiva.tagline">Plataforma de venta de boletos para
+							eventos en Guatemala</p>
+						<p class="feature-desc" data-i18n="proj.boletiva.desc">El proyecto de mayor alcance que he
+							construido: un marketplace completo donde el público descubre y compra entradas para
+							conciertos, carreras y torneos, y donde los promotores publican y administran sus propios
+							eventos. Incluye pagos en línea en quetzales, control de inventario de boletos y un panel
+							administrativo con trazabilidad de cada operación.</p>
+
+						<ul class="feature-list">
+							<li data-i18n="proj.boletiva.f1">Marketplace de eventos con categorías de conciertos, carreras,
+								torneos y cupones</li>
+							<li data-i18n="proj.boletiva.f2">Portal de promotores con verificación de documentos y
+								aprobación administrativa</li>
+							<li data-i18n="proj.boletiva.f3">Reserva temporal de boletos con temporizador y liberación
+								automática</li>
+							<li data-i18n="proj.boletiva.f4">Pagos con Visa, Mastercard, American Express y QPayPro</li>
+							<li data-i18n="proj.boletiva.f5">Autenticación en dos pasos y bitácora de auditoría</li>
+						</ul>
+
+						<ul class="chips">
+							<li>TypeScript</li>
+							<li>Node.js</li>
+							<li>SSR</li>
+							<li>Google Cloud</li>
+							<li>Cloudflare</li>
+							<li data-i18n="chip.payments">Pasarela de pagos</li>
+						</ul>
+
+						<a class="btn btn-primary" href="https://boletiva.com" target="_blank" rel="noopener noreferrer">
+							<span data-i18n="proj.visit">Visitar boletiva.com</span>
+							<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M14 4h6v6M20 4l-8.5 8.5" />
+								<path d="M18 14.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.5" />
+							</svg>
+						</a>
+					</div>
+				</article>
+
+				<!-- Otros proyectos -->
+				<div class="grid-projects">
+					<article class="pcard" data-reveal>
+						<div class="pcard-media" aria-hidden="true">
+							<svg viewBox="0 0 320 180" class="cover">
+								<defs>
+									<linearGradient id="gErp" x1="0" y1="0" x2="1" y2="1">
+										<stop offset="0%" stop-color="var(--accent)" />
+										<stop offset="100%" stop-color="var(--accent-2)" />
+									</linearGradient>
+								</defs>
+								<rect x="112" y="40" width="96" height="112" rx="12" fill="url(#gErp)" opacity=".16"
+									stroke="url(#gErp)" stroke-width="2" />
+								<rect x="128" y="56" width="64" height="28" rx="5" fill="url(#gErp)" opacity=".4" />
+								<g fill="url(#gErp)" opacity=".55">
+									<rect x="128" y="96" width="16" height="12" rx="3" />
+									<rect x="152" y="96" width="16" height="12" rx="3" />
+									<rect x="176" y="96" width="16" height="12" rx="3" />
+									<rect x="128" y="116" width="16" height="12" rx="3" />
+									<rect x="152" y="116" width="16" height="12" rx="3" />
+									<rect x="176" y="116" width="16" height="12" rx="3" />
+								</g>
+								<g stroke="url(#gErp)" stroke-width="2" opacity=".5" fill="none">
+									<path d="M40 140V96M64 140V72M88 140V112" stroke-linecap="round" />
+								</g>
+								<path d="M232 34h56v44l-10-6-9 6-9-6-9 6-9-6-10 6V34Z" fill="url(#gErp)" opacity=".22"
+									stroke="url(#gErp)" stroke-width="2" />
+							</svg>
+						</div>
+						<div class="pcard-body">
+							<h3>ERP / <span data-i18n="proj.pos.title">Punto de venta</span></h3>
+							<p data-i18n="proj.pos.desc">Sistema de punto de venta e inventario con catálogo de productos,
+								facturación y reportes de caja.</p>
+							<ul class="chips">
+								<li>Angular</li>
+								<li>Laravel</li>
+								<li>PHP</li>
+								<li>MySQL</li>
+							</ul>
+							<a class="pcard-link" href="http://erpp.josedanielrodriguez.com/" target="_blank"
+								rel="noopener noreferrer">
+								<span data-i18n="proj.demo">Ver demo</span>
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" />
+								</svg>
+							</a>
+						</div>
+					</article>
+
+					<article class="pcard" data-reveal>
+						<div class="pcard-media" aria-hidden="true">
+							<svg viewBox="0 0 320 180" class="cover">
+								<defs>
+									<linearGradient id="gRes" x1="0" y1="0" x2="1" y2="1">
+										<stop offset="0%" stop-color="var(--accent)" />
+										<stop offset="100%" stop-color="var(--accent-2)" />
+									</linearGradient>
+								</defs>
+								<g stroke="url(#gRes)" stroke-width="2" fill="url(#gRes)">
+									<circle cx="92" cy="62" r="24" fill-opacity=".16" />
+									<circle cx="92" cy="62" r="10" fill-opacity=".45" stroke="none" />
+									<circle cx="92" cy="128" r="24" fill-opacity=".16" />
+									<circle cx="92" cy="128" r="10" fill-opacity=".3" stroke="none" />
+									<circle cx="160" cy="95" r="24" fill-opacity=".16" />
+									<circle cx="160" cy="95" r="10" fill-opacity=".45" stroke="none" />
+								</g>
+								<rect x="212" y="40" width="72" height="100" rx="8" fill="url(#gRes)" opacity=".16"
+									stroke="url(#gRes)" stroke-width="2" />
+								<g fill="url(#gRes)" opacity=".5">
+									<rect x="226" y="56" width="44" height="6" rx="3" />
+									<rect x="226" y="72" width="32" height="6" rx="3" />
+									<rect x="226" y="88" width="40" height="6" rx="3" />
+									<rect x="226" y="104" width="26" height="6" rx="3" />
+								</g>
+							</svg>
+						</div>
+						<div class="pcard-body">
+							<h3 data-i18n="proj.rest.title">Control de restaurantes</h3>
+							<p data-i18n="proj.rest.desc">Gestión de mesas, comandas y cocina en tiempo real, con
+								seguimiento del estado de cada pedido.</p>
+							<ul class="chips">
+								<li>Angular</li>
+								<li>Laravel</li>
+								<li>PHP</li>
+								<li>MySQL</li>
+							</ul>
+							<a class="pcard-link" href="http://restaurante.josedanielrodriguez.com/" target="_blank"
+								rel="noopener noreferrer">
+								<span data-i18n="proj.demo">Ver demo</span>
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" />
+								</svg>
+							</a>
+						</div>
+					</article>
+
+					<article class="pcard" data-reveal>
+						<div class="pcard-media" aria-hidden="true">
+							<svg viewBox="0 0 320 180" class="cover">
+								<defs>
+									<linearGradient id="gEco" x1="0" y1="0" x2="1" y2="1">
+										<stop offset="0%" stop-color="var(--accent)" />
+										<stop offset="100%" stop-color="var(--accent-2)" />
+									</linearGradient>
+								</defs>
+								<g fill="url(#gEco)" stroke="url(#gEco)" stroke-width="2">
+									<rect x="44" y="40" width="60" height="48" rx="8" fill-opacity=".18" />
+									<rect x="116" y="40" width="60" height="48" rx="8" fill-opacity=".3" />
+									<rect x="44" y="100" width="60" height="48" rx="8" fill-opacity=".3" />
+									<rect x="116" y="100" width="60" height="48" rx="8" fill-opacity=".18" />
+								</g>
+								<g fill="none" stroke="url(#gEco)" stroke-width="2.4" stroke-linecap="round"
+									stroke-linejoin="round">
+									<path d="M206 52h10l12 58h48l12-40h-62" />
+									<circle cx="234" cy="128" r="7" />
+									<circle cx="268" cy="128" r="7" />
+								</g>
+							</svg>
+						</div>
+						<div class="pcard-body">
+							<h3 data-i18n="proj.eco.title">E-Commerce</h3>
+							<p data-i18n="proj.eco.desc">Tienda en línea con catálogo, carrito de compras y panel de
+								administración de productos y pedidos.</p>
+							<ul class="chips">
+								<li>Angular</li>
+								<li>Laravel</li>
+								<li>PHP</li>
+								<li>MySQL</li>
+							</ul>
+							<a class="pcard-link" href="http://mercado.josedanielrodriguez.com/" target="_blank"
+								rel="noopener noreferrer">
+								<span data-i18n="proj.demo">Ver demo</span>
+								<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" />
+								</svg>
+							</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ Stack ============ -->
+		<section class="section" id="stack">
+			<div class="container">
+				<header class="section-head" data-reveal>
+					<p class="section-eyebrow" data-i18n="stack.eyebrow">Herramientas</p>
+					<h2 data-i18n="stack.title">Stack técnico</h2>
+					<p class="section-sub" data-i18n="stack.sub">Tecnologías que he usado en proyectos reales, no solo en
+						tutoriales.</p>
+				</header>
+
+				<div class="grid-stack">
+					<article class="scard" data-reveal>
+						<div class="scard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<path d="M9 18 3.5 12 9 6M15 6l5.5 6L15 18" />
+							</svg>
+						</div>
+						<h3 data-i18n="stack.backend">Backend</h3>
+						<ul class="chips">
+							<li>PHP</li>
+							<li>Laravel</li>
+							<li>Symfony</li>
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>Hapi</li>
+							<li>Java SE</li>
+							<li>Java JPA</li>
+							<li>Payara</li>
+							<li>C# / .NET</li>
+							<li>Python</li>
+							<li>C++</li>
+						</ul>
+					</article>
+
+					<article class="scard" data-reveal>
+						<div class="scard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<rect x="3" y="4" width="18" height="14" rx="2.4" />
+								<path d="M3 8.6h18M7 21h10" />
+							</svg>
+						</div>
+						<h3 data-i18n="stack.frontend">Frontend</h3>
+						<ul class="chips">
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>Angular</li>
+							<li>Ionic</li>
+							<li>jQuery</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Sass</li>
+						</ul>
+					</article>
+
+					<article class="scard" data-reveal>
+						<div class="scard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<ellipse cx="12" cy="5.8" rx="7.6" ry="3.2" />
+								<path d="M4.4 5.8v12.4c0 1.77 3.4 3.2 7.6 3.2s7.6-1.43 7.6-3.2V5.8M4.4 12c0 1.77 3.4 3.2 7.6 3.2s7.6-1.43 7.6-3.2" />
+							</svg>
+						</div>
+						<h3 data-i18n="stack.data">Bases de datos</h3>
+						<ul class="chips">
+							<li>MySQL</li>
+							<li>PostgreSQL</li>
+							<li>Oracle</li>
+							<li>SQL Server</li>
+							<li>MongoDB</li>
+							<li>Cassandra</li>
+							<li>Firebase</li>
+						</ul>
+					</article>
+
+					<article class="scard" data-reveal>
+						<div class="scard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<path d="M7 18.4a4.4 4.4 0 0 1-.5-8.77 5.6 5.6 0 0 1 10.83-1.7A4.35 4.35 0 0 1 17.6 18.4H7Z" />
+							</svg>
+						</div>
+						<h3 data-i18n="stack.cloud">Cloud &amp; DevOps</h3>
+						<ul class="chips">
+							<li>AWS</li>
+							<li>CloudFormation</li>
+							<li>Google Cloud</li>
+							<li>Jenkins</li>
+							<li>Git</li>
+							<li>Amazon Connect</li>
+							<li>Zendesk</li>
+						</ul>
+					</article>
+
+					<article class="scard" data-reveal>
+						<div class="scard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<rect x="6.6" y="2.6" width="10.8" height="18.8" rx="2.6" />
+								<path d="M10.6 5.6h2.8M12 18.2h.01" />
+							</svg>
+						</div>
+						<h3 data-i18n="stack.mobile">Móvil &amp; IoT</h3>
+						<ul class="chips">
+							<li>Android</li>
+							<li>iOS</li>
+							<li>Ionic</li>
+							<li>Arduino</li>
+						</ul>
+					</article>
+
+					<article class="scard" data-reveal>
+						<div class="scard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<path d="M4 12.5 9 17.5 20 6.5" />
+							</svg>
+						</div>
+						<h3 data-i18n="stack.quality">Calidad &amp; integración</h3>
+						<ul class="chips">
+							<li>Jest</li>
+							<li>Mongoose</li>
+							<li>APIs REST</li>
+							<li>Middleware</li>
+							<li data-i18n="chip.microservices">Microservicios</li>
+							<li>ISO 27001</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ Formación ============ -->
+		<section class="section section-alt" id="formacion">
+			<div class="container">
+				<header class="section-head" data-reveal>
+					<p class="section-eyebrow" data-i18n="edu.eyebrow">Aprendizaje</p>
+					<h2 data-i18n="edu.title">Formación y certificaciones</h2>
+					<p class="section-sub" data-i18n="edu.sub">Formación académica continua y cursos especializados.</p>
+				</header>
+
+				<div class="edu-layout">
+					<div class="edu-col" data-reveal>
+						<h3 class="edu-col-title" data-i18n="edu.academic">Formación académica</h3>
+						<ol class="edu-list">
+							<li>
+								<p class="edu-period"><span data-i18n="edu.d1.period">2026 — Actualidad</span>
+									<span class="tag tag-live" data-i18n="edu.ongoing">En curso</span>
+								</p>
+								<h4 data-i18n="edu.d1.title">Maestría en Estadística Aplicada</h4>
+								<p class="edu-org" data-i18n="edu.d1.org">Universidad de San Carlos de Guatemala</p>
+							</li>
+							<li>
+								<p class="edu-period">2018 — 2019</p>
+								<h4 data-i18n="edu.d2.title">Maestría en Administración de Negocios</h4>
+								<p class="edu-org" data-i18n="edu.d2.org">Universidad Mariano Gálvez de Guatemala <span
+										class="edu-note">(cursada hasta el cuarto trimestre)</span></p>
+							</li>
+							<li>
+								<p class="edu-period">2013 — 2019</p>
+								<h4 data-i18n="edu.d3.title">Ingeniería en Sistemas de Información</h4>
+								<p class="edu-org" data-i18n="edu.d3.org">Universidad Mariano Gálvez de Guatemala</p>
+							</li>
+							<li>
+								<p class="edu-period">2011 — 2012</p>
+								<h4 data-i18n="edu.d4.title">Bachillerato en Ciencias y Letras con orientación en
+									Computación</h4>
+								<p class="edu-org" data-i18n="edu.d4.org">Colegio «La Ilustración» — Galardón a la
+									Excelencia «De La Riva»</p>
+							</li>
+						</ol>
+					</div>
+
+					<div class="edu-col" data-reveal>
+						<h3 class="edu-col-title" data-i18n="edu.courses">Cursos y certificaciones</h3>
+						<ul class="cert-grid">
+							<li><span class="cert-year">2026</span>
+								<div><strong>Claude Code in Action</strong><span>Anthropic</span></div>
+							</li>
+							<li><span class="cert-year">2026</span>
+								<div><strong>Claude Code 101</strong><span>Anthropic</span></div>
+							</li>
+							<li><span class="cert-year">2026</span>
+								<div><strong>Zendesk Implementation Expert</strong><span>Zendesk</span></div>
+							</li>
+							<li><span class="cert-year">2026</span>
+								<div><strong>Amazon Connect Complete Training</strong><span>Udemy</span></div>
+							</li>
+							<li><span class="cert-year">2018</span>
+								<div><strong>AWS CloudFormation</strong><span>TEC</span></div>
+							</li>
+							<li><span class="cert-year">2017</span>
+								<div><strong data-i18n="edu.c6.title">Primeros pasos con Angular 2</strong><span>CodeBlocks</span></div>
+							</li>
+							<li><span class="cert-year">2016</span>
+								<div><strong data-i18n="edu.c7.title">Oracle y otras bases de datos</strong><span
+										data-i18n="edu.umg">Universidad Mariano Gálvez</span></div>
+							</li>
+							<li><span class="cert-year">2015</span>
+								<div><strong data-i18n="edu.c8.title">Fundamentos de las normas ISO 27001 y
+										19011</strong><span data-i18n="edu.c8.org">Ministerio de Economía</span></div>
+							</li>
+							<li><span class="cert-year">2015</span>
+								<div><strong data-i18n="edu.c9.title">Taller de Redes</strong><span
+										data-i18n="edu.umg">Universidad Mariano Gálvez</span></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ Contacto ============ -->
+		<section class="section" id="contacto">
+			<div class="container">
+				<header class="section-head" data-reveal>
+					<p class="section-eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+					<h2 data-i18n="contact.title">Hablemos de tu proyecto</h2>
+					<p class="section-sub" data-i18n="contact.sub">¿Necesitas integrar sistemas, levantar una plataforma o
+						reforzar tu equipo? Escríbeme por el canal que prefieras.</p>
+				</header>
+
+				<div class="grid-contact">
+					<a class="ccard" href="mailto:contacto@josedanielrodriguez.com?subject=Hola%20Daniel" data-reveal>
+						<span class="ccard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<rect x="2.8" y="4.8" width="18.4" height="14.4" rx="2.4" />
+								<path d="m3.4 6.6 8.6 6 8.6-6" />
+							</svg>
+						</span>
+						<span class="ccard-label" data-i18n="contact.email">Correo electrónico</span>
+						<span class="ccard-value">contacto@josedanielrodriguez.com</span>
+					</a>
+
+					<a class="ccard" href="https://wa.link/bwtyzc" target="_blank" rel="noopener noreferrer" data-reveal>
+						<span class="ccard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<path
+									d="M12.04 2.5a9.44 9.44 0 0 0-8.1 14.24L2.5 21.5l4.9-1.37a9.44 9.44 0 1 0 4.64-17.63Zm0 1.78a7.66 7.66 0 1 1-3.9 14.25l-.28-.17-2.9.81.82-2.83-.18-.29A7.66 7.66 0 0 1 12.04 4.28Z" />
+							</svg>
+						</span>
+						<span class="ccard-label">WhatsApp</span>
+						<span class="ccard-value" data-i18n="contact.whatsappValue">Mensaje directo</span>
+					</a>
+
+					<a class="ccard" href="https://www.linkedin.com/in/jdanielrodriguez/" target="_blank"
+						rel="noopener noreferrer" data-reveal>
+						<span class="ccard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<path
+									d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.6 4.78 6V21h-4v-5.5c0-1.31-.02-3-1.86-3-1.86 0-2.14 1.42-2.14 2.9V21h-4V9Z" />
+							</svg>
+						</span>
+						<span class="ccard-label">LinkedIn</span>
+						<span class="ccard-value">/in/jdanielrodriguez</span>
+					</a>
+
+					<a class="ccard" href="https://github.com/jdanielrodriguez" target="_blank" rel="noopener noreferrer"
+						data-reveal>
+						<span class="ccard-icon" aria-hidden="true">
+							<svg class="icon" viewBox="0 0 24 24">
+								<path
+									d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+							</svg>
+						</span>
+						<span class="ccard-label">GitHub</span>
+						<span class="ccard-value">/jdanielrodriguez</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p class="copyright">
+				© <span id="year">2026</span> José Daniel Rodríguez.
+				<span data-i18n="footer.rights">Todos los derechos reservados.</span>
+			</p>
+			<p class="footer-made" data-i18n="footer.made">Hecho con HTML, CSS y JavaScript. Sin frameworks.</p>
 		</div>
-	</div>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script>
-		window.onload = function () {
-			document.body.className = '';
-			$("#year").html(new Date().getFullYear());
-		}
-		window.ontouchmove = function () { return false; }
-		window.onorientationchange = function () { document.body.scrollTop = 0; }
-		$(document).ready(function () {
-			$(".owl-carousel").owlCarousel({
-				margin: 10,
-				loop: true,
-				items: 5,
-				autoplay: true,
-				autoHeight: false,
-				autoWidth: false,
-				responsive: {
-					0: {
-						items: 2,
-					},
-					480: {
-						items: 2,
-					},
-					736: {
-						items: 3,
-					},
-					1280: {
-						items: 5,
-					},
-					1680: {
-						items: 5,
-					}
-				}
-			});
-		});
-	</script>
+	</footer>
+
+	<a class="to-top" href="#inicio" id="toTop" data-i18n-aria-label="a11y.top" aria-label="Volver arriba">
+		<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+			<path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+		</svg>
+	</a>
+
+	<script src="assets/js/i18n.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
