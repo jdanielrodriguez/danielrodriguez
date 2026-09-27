@@ -658,6 +658,8 @@ strong {
 }
 
 .c-prop {
+	display: inline-block;
+	min-width: 11ch;
 	color: var(--accent);
 }
 

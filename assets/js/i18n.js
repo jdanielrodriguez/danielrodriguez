@@ -37,6 +37,13 @@
 
 			'code.role': "'Integration & Full Stack'",
 			'code.focus': "'middleware, APIs e integraciones'",
+			'code.k.role': 'rol:',
+			'code.k.company': 'empresa:',
+			'code.k.base': 'base:',
+			'code.k.stack': 'stack:',
+			'code.k.focus': 'enfoque:',
+			'code.k.langs': 'idiomas:',
+			'code.k.recent': 'experiencia_reciente:',
 
 			'stats.years': 'años de experiencia profesional',
 			'stats.companies': 'empresas en 3 países',
@@ -171,6 +178,13 @@
 
 			'code.role': "'Integration & Full Stack'",
 			'code.focus': "'middleware, APIs and integrations'",
+			'code.k.role': 'role:',
+			'code.k.company': 'company:',
+			'code.k.base': 'based:',
+			'code.k.stack': 'stack:',
+			'code.k.focus': 'focus:',
+			'code.k.langs': 'languages:',
+			'code.k.recent': 'recent_experience:',
 
 			'stats.years': 'years of professional experience',
 			'stats.companies': 'companies across 3 countries',
