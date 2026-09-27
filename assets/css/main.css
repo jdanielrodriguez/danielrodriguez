@@ -1060,7 +1060,7 @@ strong {
 /* ---------- Tarjetas de proyecto ---------- */
 .grid-projects {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(258px, 100%), 1fr));
 	gap: 22px;
 	margin-top: 22px;
 }
@@ -1114,11 +1114,17 @@ strong {
 .pcard-link {
 	display: inline-flex;
 	align-items: center;
-	gap: 8px;
+	gap: 7px;
 	margin-top: auto;
 	color: var(--accent);
 	font-size: .9rem;
 	font-weight: 600;
+}
+
+.pcard-link .chip-i {
+	width: 15px;
+	height: 15px;
+	opacity: 1;
 }
 
 .pcard-link .icon {

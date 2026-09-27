@@ -91,7 +91,11 @@
 			'proj.sub': 'Plataformas completas, de la base de datos a la interfaz.',
 			'proj.featured': 'Proyecto destacado',
 			'proj.visit': 'Visitar boletiva.com',
-			'proj.demo': 'Ver demo',
+			'proj.repo': 'Ver repositorio',
+			'proj.aviation.desc': 'Middleware que integra la API de AviationStack para consultar vuelos y aerolíneas. Docker Compose, caché en Redis, documentación Swagger y pruebas automatizadas con integración continua.',
+			'proj.egov.desc': 'Auditoría automatizada de los portales municipales del suroccidente de Guatemala: rendimiento, actualización y seguridad, con análisis estadístico (chi cuadrado, V de Cramér, regresión logística). Investigación de maestría.',
+			'proj.pasaeventos.desc': 'Plataforma de gestión, venta y validación de entradas para eventos. Monorepo con Nx, completamente dockerizado y preparado para despliegue en la nube.',
+			'proj.atom.desc': 'Gestor de tareas full stack: Angular con Material y RxJS en el frontend, Express en el backend y Firebase para base de datos y autenticación, sobre Docker.',
 
 			'proj.boletiva.tagline': 'Plataforma de venta de boletos para eventos en Guatemala',
 			'proj.boletiva.desc': 'El proyecto de mayor alcance que he construido: un marketplace completo donde el público descubre y compra entradas para conciertos, carreras y torneos, y donde los promotores publican y administran sus propios eventos. Incluye pagos en línea en quetzales, control de inventario de boletos y un panel administrativo con trazabilidad de cada operación.',
@@ -101,12 +105,6 @@
 			'proj.boletiva.f4': 'Pagos con Visa, Mastercard, American Express y QPayPro',
 			'proj.boletiva.f5': 'Autenticación en dos pasos y bitácora de auditoría',
 
-			'proj.pos.title': 'Punto de venta',
-			'proj.pos.desc': 'Sistema de punto de venta e inventario con catálogo de productos, facturación y reportes de caja.',
-			'proj.rest.title': 'Control de restaurantes',
-			'proj.rest.desc': 'Gestión de mesas, comandas y cocina en tiempo real, con seguimiento del estado de cada pedido.',
-			'proj.eco.title': 'E-Commerce',
-			'proj.eco.desc': 'Tienda en línea con catálogo, carrito de compras y panel de administración de productos y pedidos.',
 
 			'stack.eyebrow': 'Herramientas',
 			'stack.title': 'Stack técnico',
@@ -233,7 +231,11 @@
 			'proj.sub': 'Complete platforms, from the database to the interface.',
 			'proj.featured': 'Featured project',
 			'proj.visit': 'Visit boletiva.com',
-			'proj.demo': 'View demo',
+			'proj.repo': 'View repository',
+			'proj.aviation.desc': 'Middleware integrating the AviationStack API to query flights and airlines. Docker Compose, Redis cache, Swagger docs and automated tests with continuous integration.',
+			'proj.egov.desc': "Automated audit of municipal web portals in south-western Guatemala — performance, freshness and security — with statistical analysis (chi-square, Cramér's V, logistic regression). Master's research.",
+			'proj.pasaeventos.desc': 'Platform for managing, selling and validating event tickets. Nx monorepo, fully dockerised and ready for cloud deployment.',
+			'proj.atom.desc': 'Full stack task manager: Angular with Material and RxJS on the front end, Express on the back end and Firebase for database and authentication, on Docker.',
 
 			'proj.boletiva.tagline': 'Event ticketing platform for Guatemala',
 			'proj.boletiva.desc': 'The largest project I have built: a full marketplace where the public discovers and buys tickets for concerts, races and tournaments, and where promoters publish and manage their own events. It includes online payments in quetzales, ticket inventory control and an admin panel with a full audit trail.',
@@ -243,12 +245,6 @@
 			'proj.boletiva.f4': 'Payments with Visa, Mastercard, American Express and QPayPro',
 			'proj.boletiva.f5': 'Two-factor authentication and audit logging',
 
-			'proj.pos.title': 'Point of sale',
-			'proj.pos.desc': 'Point of sale and inventory system with a product catalogue, invoicing and cash reports.',
-			'proj.rest.title': 'Restaurant management',
-			'proj.rest.desc': 'Real-time management of tables, orders and kitchen, tracking the status of every order.',
-			'proj.eco.title': 'E-Commerce',
-			'proj.eco.desc': 'Online store with catalogue, shopping cart and an admin panel for products and orders.',
 
 			'stack.eyebrow': 'Toolbox',
 			'stack.title': 'Tech stack',
